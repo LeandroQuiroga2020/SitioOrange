@@ -2,6 +2,7 @@
 from time import sleep
 from pages.Test_HomePage import Test_HomePage
 from pages.Test_HelpPage import Test_HelpPage
+from pages.Test_BasePage import init_driver  #llamado para ejecutar en varios navegadores
 
 def test_login(init_driver):
     #se subio esto nuevo a git

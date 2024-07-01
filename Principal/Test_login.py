@@ -1,9 +1,14 @@
 
+#import pytest
 from time import sleep
-from pages.Test_HomePage import Test_HomePage
+#from selenium import webdriver
+from pages.Test_HomePage import Test_HomePage 
 from pages.Test_OrangePage import Test_OrangePage
 from pages.Test_OrganizationStructure import Test_OrganizationStructure
 from pages.Test_AddElement import Test_AddElement
+from pages.Test_BasePage import init_driver
+
+
 
 def test_login(init_driver):
     #se subio esto nuevo a git
@@ -19,10 +24,6 @@ def test_login(init_driver):
     
     addelement = Test_AddElement(init_driver)
     addelement.agregar_elemento("milo8884","milo8884","rocoroco")
-  
-    
-
-
 
     texto_obtenido = addelement.verificacionElemento()
 
